@@ -1,0 +1,7 @@
+<h2 class="additionheadline">Welcome to the addition</h2>
+<input id="first" class="additioninput" type="number" [(ngModel)]="numberOne"/> +
+<input id="second" class="additioninput" type="number" [(ngModel)]="numberTwo"/> =
+<label id="summe">{{sum}}</label>
+<p><button class="additionbutton" (click)="addition()">Add</button></p>
+<p><button routerLink="/" class="returnbutton">Back to the start</button></p>
+<router-outlet></router-outlet>
