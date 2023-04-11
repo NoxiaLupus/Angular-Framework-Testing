@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'start', component: AppComponent, pathMatch: 'full'}
+  { path: '', redirectTo: '/', pathMatch: 'full'}
 ] 
 
 @NgModule({
@@ -16,6 +16,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserModule
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
