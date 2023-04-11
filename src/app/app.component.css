@@ -1,0 +1,16 @@
+.startheadline{
+    color: black;
+    font-family: monospace;
+    font-size: 40px;
+    background: linear-gradient(to right, aqua, lightsteelblue);
+    height: 50px;
+    width: 400px;
+}
+
+.button{
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: lightsteelblue;
+    border-color: black;   
+}
