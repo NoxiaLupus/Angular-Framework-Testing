@@ -1,0 +1,7 @@
+<h2 class="divisionheadline">Welcome to the division</h2>
+<input class="divisioninput" id="first" type="number" [(ngModel)]="numberOne"/> / 
+    <input class="divisioninput" id="second" type="number" [(ngModel)]="numberTwo"/> = 
+        <label id="quotient">{{quotient}}</label>
+<p><button class="divisionbutton" (click)="divide()">Divide</button></p>
+<p><button class="returnbutton" routerLink="/">Back to the start</button></p>
+<router-outlet></router-outlet> 

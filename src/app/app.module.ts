@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { AdditionComponent } from './addition/addition.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SubtractionComponent } from './subtraction/subtraction.component';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { DivisionComponent } from './division/division.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdditionComponent
+    AdditionComponent,
+    SubtractionComponent,
+    MultiplicationComponent,
+    DivisionComponent
   ],
   imports: [
     BrowserModule,

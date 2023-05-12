@@ -1,0 +1,7 @@
+<h2 class="multiplicationheadline">Welcome to the multiplication</h2>
+<input class="multiplicationinput" id="first" type="number" [(ngModel)]="numberOne"/> * 
+    <input class="multiplicationinput" id="second" type="number" [(ngModel)]="numberTwo"/> = 
+        <label class="product">{{product}}</label>
+<p><button class="multiplicationbutton" (click)="multiply()">Multiply</button></p>
+<p><button class="returnbutton" routerLink="/">Back to the start</button></p>
+<router-outlet></router-outlet> 

@@ -10,6 +10,8 @@ export class AdditionComponent {
   public numberTwo: number = 0;
   public sum: number = 0;
 
+  title = "Addition";
+
   constructor() {}
 
   ngOnInit(): void { }

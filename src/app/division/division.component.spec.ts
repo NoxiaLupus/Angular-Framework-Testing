@@ -1,16 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-
-import { AdditionComponent } from './addition.component';
 import { FormsModule } from '@angular/forms';
 
-describe('AdditionComponent', () => {
-  let component: AdditionComponent;
-  let fixture: ComponentFixture<AdditionComponent>;
+
+import { DivisionComponent } from './division.component';
+
+describe('DivisionComponent', () => {
+  let component: DivisionComponent;
+  let fixture: ComponentFixture<DivisionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdditionComponent ],
+      declarations: [ DivisionComponent ],
       imports: [ 
         RouterTestingModule,
         FormsModule 
@@ -18,7 +19,7 @@ describe('AdditionComponent', () => {
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AdditionComponent);
+    fixture = TestBed.createComponent(DivisionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -27,14 +28,14 @@ describe('AdditionComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have as title "Addition"', () => {
-    expect(component.title).toEqual('Addition');
+  it('should have as title "Division"', () => {
+    expect(component.title).toEqual('Division');
   });
-
-  it('should add two numbers', () => {
-    component.numberOne = 5;
+  
+  it('should divide two numbers', () => {
+    component.numberOne = 15;
     component.numberTwo = 5;
-    component.addition();
-    expect(component.sum).toBe(10);
+    component.divide();
+    expect(component.quotient).toBe(3);
   })
 });
