@@ -1,22 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
+import { AdditionComponent } from './addition/addition.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SubtractionComponent } from './subtraction/subtraction.component';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { DivisionComponent } from './division/division.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full'}
-] 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdditionComponent,
+    SubtractionComponent,
+    MultiplicationComponent,
+    DivisionComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    RouterModule,
+    AppRoutingModule
   ],
-  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

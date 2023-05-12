@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="division-spec"
+    errors="0" failures="0" hostname="" id="" package="division-spec" skipped="0"
+    tests="3" time="1.912" timestamp="">
+  
+    <testcase name="test one: check the header" classname="division-spec" time="0.7670" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="test two: divide two numbers" classname="division-spec" time="0.7630" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="test three: navigate to the start page" classname="division-spec" time="0.3820" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

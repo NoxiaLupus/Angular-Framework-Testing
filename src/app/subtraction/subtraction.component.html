@@ -1,0 +1,7 @@
+<h2 class="subtractionheadline">Welcome to the subtraction</h2>
+<input class="subtractioninput" id="first" type="number" [(ngModel)]="numberOne"/> - 
+    <input class="subtractioninput" id="second" type="number" [(ngModel)]="numberTwo"/> = 
+        <label id='difference'>{{difference}}</label>
+<p><button class="subtractionbutton" (click)="subtract()">Subtract</button></p>
+<p><button class="returnbutton" routerLink="/">Back to the start</button></p>
+<router-outlet></router-outlet> 
